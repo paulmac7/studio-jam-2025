@@ -29,7 +29,7 @@ func translate_input(actions: Array[float], map: Array, tol: float) -> bool:
 	return true
 
 func _ready() -> void:
-	pass
+	data.gen_bms()
 
 func _process(delta: float) -> void:
 	var just_started: bool = false
