@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1oy4k4fbcuu0"]
+
+[ext_resource type="Script" uid="uid://d2p3ca0u66yht" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Resource" uid="uid://ce6cdjo1535gj" path="res://data/storyline.tres" id="2_0xm2m"]
+[ext_resource type="AudioStream" uid="uid://dnrm6fenpkubw" path="res://assets/test.mp3" id="3_h2yge"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+data = ExtResource("2_0xm2m")
+
+[node name="Text" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StoryText" type="Label" parent="."]
+offset_left = 653.0
+offset_top = 146.0
+offset_right = 1145.0
+offset_bottom = 358.0
+theme_override_font_sizes/font_size = 32
+
+[node name="MainSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_h2yge")
