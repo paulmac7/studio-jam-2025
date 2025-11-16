@@ -7,7 +7,7 @@ extends Node2D
 @onready var sound = $MainSound
 
 var time_since_last_release: float = 0.0
-const TIME_TOLERANCE: float = 0.30 # % tolerance of deviation from gap
+const TIME_TOLERANCE: float = 0.20 # seconds +/- player can be off
 var recording: bool = false
 
 # player_actions stores gaps between space presses in seconds
@@ -23,7 +23,7 @@ func translate_input(actions: Array[float], map: Array, tol: float) -> bool:
 		var cur_gap = actions[i]
 		var map_gap = map[i]
 		
-		if not is_equal_approx(map_gap, -1) and abs(cur_gap - map_gap) / map_gap > tol:
+		if not is_equal_approx(map_gap, -1) and abs(cur_gap - map_gap) > tol:
 			return false
 		
 	return true

@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_mrrye")
-beats = Array[String](["hqq", "eedh", "deh", "qqqq", "eqeqq", "eeqeeq", "eeeeeeee", "dqd"])
+beats = Array[String](["x", "hqq", "eedh", "deh", "qqqq", "eqeqq", "eeqeeq", "eeeeeeee", "dqd"])
 story_lines = Array[String](["test story line 1", "wow let me eat food", "free proceed"])
 metadata/_custom_type_script = "uid://4qkkey1tseul"
